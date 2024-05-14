@@ -1,0 +1,109 @@
+.apropos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    .hero img {
+        border-radius: 25px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.37);
+
+        @media screen and (max-width: 768px) {
+            border-radius: 10px;
+        }
+
+    }
+}
+
+.apropos__collapses {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 30px;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    .collapse {
+        margin-bottom: 10px;
+
+        .collapse__title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 400;
+            background-color: #FF6060;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px 10px 10px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+                padding: 8px 10px 8px 10px;
+                border-radius: 5px;
+
+            }
+
+
+            button {
+                border: none;
+                background: none;
+
+                .downArrow{
+                    transition-duration: 400ms;
+                    transform: rotate(-180deg);
+                }
+
+                .topArrow{
+                    transition-duration: 400ms;
+                    transform: rotate(0deg);
+                }
+
+                img {
+                    @media screen and (max-width: 768px) {
+                        width: 15px;
+                    }
+                }
+
+            }
+        }
+
+        .collapse-content {
+            background-color: #F6F6F6;
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 0 15px;
+            border-radius: 5px;
+
+
+
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+
+            p {
+                margin-top: 0px;
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 0.5s ease, max-height 0.5s ease;
+            
+            }
+
+            .collapse__description {
+                max-height: 250px;
+                padding: 15px 8px;
+                opacity: 1;
+                max-height: 200px;
+                transition: opacity 1s ease, max-height 1s ease;
+                margin-bottom: 10px;
+            }
+        }
+    
+
+    }
+}

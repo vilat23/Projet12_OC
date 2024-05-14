@@ -1,0 +1,41 @@
+.Error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ff6060;
+
+    h1 {
+        font-size: 288px;
+        margin: 139px 0;
+        line-height: 263px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 96px;
+            margin: 113px 0;
+            line-height: 99px;
+        }
+    }
+
+    p {
+        font-size: 36px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+            font-weight: 300;
+            padding: 0 30px;
+            line-height: 24px;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        margin: 139px 0;
+        color: #000000;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 113px 0;
+        }
+    }
+}

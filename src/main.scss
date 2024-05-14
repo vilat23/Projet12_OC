@@ -1,0 +1,19 @@
+@use "./components/header/header.scss";
+@use "./components/hero/hero.scss";
+@use "./components/footer/footer.scss";
+@use "./components/cards/card.scss";
+@use "./components/details/details.scss";
+@use "./components/collapse/collapse.scss";
+@use "./pages/apropos/apropos.scss";
+@use "./pages/error/error.scss";
+@use "./pages/accueil.scss";
+@use "./components/carrousel/carrousel.scss";
+@use "./components/rating/rating.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
